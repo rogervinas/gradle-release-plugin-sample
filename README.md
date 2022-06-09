@@ -1,4 +1,4 @@
-[![Build](https://github.com/rogervinas/gradle-release-plugin-sample/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/rogervinas/gradle-release-plugin-sample/actions/workflows/build.yml)
+[![Build](https://github.com/rogervinas/gradle-release-plugin-sample/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/rogervinas/gradle-release-plugin-sample/actions/workflows/ci.yml)
 
 # Gradle Release Plugin Sample
 
