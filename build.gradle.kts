@@ -4,13 +4,13 @@ plugins {
 
 tasks.register("build") {
     doFirst {
-        println("Building!")
+        println("Building $version")
     }
 }
 
 tasks.register("publish") {
     doFirst {
-        println("Publishing!")
+        println("Publishing $version")
     }
 }
 
