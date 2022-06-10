@@ -34,10 +34,8 @@ jobs:
       uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
       with:
         arguments: publish
-    - name: Check hub command
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: hub release create -m "Release 1.0.0" -m "Bla bla ${{ github.ref_type }}" 1.0.0
+    - name: Check command
+      run: echo "event=${{ github.event_name }} ref=${{ github.ref }} ref_name=${{ github.ref_name }} ref_type=${{ github.ref_type }}"
     - name: Create Release in GitHub
       if: github.ref_type == 'tag'
       env:
