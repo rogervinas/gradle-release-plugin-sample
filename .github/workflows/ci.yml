@@ -40,13 +40,6 @@ jobs:
       run: hub release show 1.0.0
     - name: Create Release in GitHub
       if: github.ref_type == 'tag'
-      uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        body: |
-          See changes in [Changelog](#${{ github.ref_name }})
-        draft: false
-        prerelease: false
+      run: hub release create -m "Release ${{ github.ref_name }}" -m "See [Changelog](../main/CHANGELOG.md)" ${{ github.ref_name }}
