@@ -34,10 +34,11 @@ jobs:
       uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
       with:
         arguments: publish
-    - name: Check gh-cli
-      run: gh --version
     - name: Create Release in GitHub
       if: github.ref_type == 'tag'
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-      run: hub release create -m "Release ${{ github.ref_name }}" -m "See [Changelog](../main/CHANGELOG.md)" ${{ github.ref_name }}
+      run: >
+        gh release create ${{ github.ref_name }}
+        -t "Release ${{ github.ref_name }}"
+        -n "See [Changelog](../main/CHANGELOG.md) for more information"
