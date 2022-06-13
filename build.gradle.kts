@@ -15,7 +15,7 @@ tasks.register("publish") {
 }
 
 release {
-    tagTemplate = "v$version"
+    tagTemplate = "v\$version"
     with (propertyMissing("git") as net.researchgate.release.GitAdapter.GitConfig) {
         requireBranch = ""
     }
