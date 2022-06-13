@@ -42,3 +42,4 @@ jobs:
         gh release create ${{ github.ref_name }}
         -t "Release ${{ github.ref_name }}"
         -n "See [Changelog](../main/CHANGELOG.md) for more information"
+        --generate-notes
