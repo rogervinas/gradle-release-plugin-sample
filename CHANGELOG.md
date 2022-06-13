@@ -5,6 +5,11 @@
 ### Added
 - Bla bla bla
 
+## [1.1.0] - 2022-06-10
+
+### Added
+- Bla bla bla
+
 ## [1.0.6] - 2022-06-07
 
 ### Added
@@ -40,7 +45,8 @@
 ### Added
 - Bla bla bla
 
-[Unreleased]: https://github.com/n26/gradle-plugins/compare/1.0.6...HEAD
+[Unreleased]: https://github.com/n26/gradle-plugins/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/n26/gradle-plugins/compare/1.0.6...1.1.0
 [1.0.6]: https://github.com/n26/gradle-plugins/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/n26/gradle-plugins/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/n26/gradle-plugins/compare/1.0.3...1.0.4
