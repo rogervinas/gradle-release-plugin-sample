@@ -1,8 +1,10 @@
-### Added
+# Unreleased
+
+## Added
 - Something added ...
 
-### Changed
+## Changed
 - Something changed ...
 
-### Removed
+## Removed
 - Something removed ...
