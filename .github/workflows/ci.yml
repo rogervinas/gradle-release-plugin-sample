@@ -35,6 +35,7 @@ jobs:
       with:
         arguments: publish
     - name: Create Release in GitHub
+      if: github.ref_type == 'tag'
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       run: >
