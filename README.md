@@ -16,7 +16,7 @@ Steps to create a new release:
 * Create a branch and a pull request adding the changelog for next release:
   * Assuming next release is X.Y.Z and we kept description of unreleased changes in `changelog/development.md`
   * Just move contents of `changelog/development.md` to `changelog/vX.Y.Z.md`
-  * **No changes to other files should be added to this pull request**
+  * No changes to other files should be added to this pull request
 * Execute `./gradlew release -Prelease.useAutomaticVersion=true` or `./gradlew release -Prelease.releaseVersion=X.Y.Z` that will automatically:
   * Set version to the new released version and push to current branch
   * Tag released version triggering a CI pipeline that will publish artifacts and will create [release with notes in GitHub](../../releases)
