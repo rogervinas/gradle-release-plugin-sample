@@ -1,5 +1,5 @@
 plugins {
-    id("net.researchgate.release") version "3.1.0"
+    id("net.researchgate.release") version "3.2.0"
 }
 
 tasks.named("build") {
